@@ -1,3 +1,5 @@
+// by Bishal jaiswal
+
 #include <stdio.h>
 
 int main()

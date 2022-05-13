@@ -3,9 +3,9 @@
 
 const float PI = 3.14;
 
-int Edistance(int x1, int y1, int x2, int y2)
+float Edistance(int x1, int y1, int x2, int y2)
 {
-    int distance = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    float distance = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
     return distance;
 }
 
@@ -33,8 +33,8 @@ int main()
 
     int (* fptr)(int,int,int,int);
     fptr = &Edistance;
-    int distance = (*fptr)(x1,y1,x2,y2); 
-    printf("The distance is : %d",distance);
+    flaot distance = (*fptr)(x1,y1,x2,y2); 
+    printf("The distance is : %.2f",distance);
 
     printf("\nThe area of the circle is : %.2f",areaOfCircle(distance));
  
